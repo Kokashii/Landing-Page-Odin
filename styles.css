@@ -1,0 +1,16 @@
+html {
+  font-family: "Roboto";
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-section {
+  background-color: #1f2937;
+  color: white;
+}
+
+.hero-card > h2 {
+}
