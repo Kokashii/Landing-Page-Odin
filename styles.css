@@ -1,16 +1,118 @@
 html {
-  font-family: "Roboto";
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
   display: flex;
   flex-direction: column;
+  font-family: "Roboto", serif;
+  background-color: rgb(111, 111, 111);
+}
+
+.wrapper {
+  max-inline-size: 1100px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+header {
+  background-color: #1f2937;
+  padding: 1rem;
+}
+
+.header-content {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: space-between;
+}
+
+.hero-logo {
+  font-size: 24px;
+  color: #f9faf8;
+}
+
+.right-links > a {
+  margin: 1rem;
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 18px;
 }
 
 .hero-section {
   background-color: #1f2937;
-  color: white;
+  padding: 1rem;
 }
 
-.hero-card > h2 {
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-maincard {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-right: 30px;
+}
+
+.hero-maincard > h2 {
+  font-size: 48px;
+  color: #f9faf8;
+  font-weight: 900;
+}
+
+.hero-maincard > p {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.sign-up {
+  background-color: #3882f6;
+  max-width: 100px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 0;
+  color: #e5e7eb;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  flex: 1;
+}
+
+.info-section {
+  background-color: white;
+}
+
+.info-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-content > h3 {
+  color: #1f2937;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.info-boxes {
+  display: flex;
+  gap: 10px;
+}
+
+.img-holder {
+  border: 2px solid blue;
+  height: 150px;
+  width: 150px;
 }
